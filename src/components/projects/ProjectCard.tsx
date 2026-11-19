@@ -1,26 +1,24 @@
 import { Check } from "lucide-react";
 import type { Project } from "@/config/projects";
-import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
 import { ProjectGallery } from "./ProjectGallery";
 
 const conceptual = new Set<Project["stage"]>(["Prototipo", "Concepto / demostración"]);
 
 export function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const reversed = index % 2 === 1;
   const isConcept = conceptual.has(project.stage);
   const showClient = project.client && project.clientAuthorized;
 
   return (
     <article
       aria-labelledby={`project-${project.id}`}
-      className="grid items-center gap-8 rounded-[2rem] border border-neutral-200 bg-white p-4 sm:p-6 lg:grid-cols-12 lg:gap-12 lg:p-8"
+      className="grid items-center gap-6 rounded-[2rem] border border-neutral-200 bg-white p-4 sm:gap-8 sm:p-6 lg:grid-cols-12 lg:gap-12 lg:p-8"
     >
-      <Reveal className={cn("min-w-0 lg:col-span-7", reversed && "lg:order-2")}>
+      <div className="min-w-0 lg:col-span-7">
         <ProjectGallery images={project.images} projectName={project.name} />
-      </Reveal>
+      </div>
 
-      <Reveal delay={0.1} className={cn("min-w-0 px-2 pb-4 sm:px-0 lg:col-span-5 lg:pb-0", reversed && "lg:order-1")}>
+      <div className="min-w-0 px-2 pb-4 sm:px-0 lg:col-span-5 lg:pb-0">
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="font-mono text-neutral-400">{String(index + 1).padStart(2, "0")}</span>
           <span className="h-px w-4 bg-neutral-300" />
@@ -70,7 +68,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
             </ul>
           </div>
         )}
-      </Reveal>
+      </div>
     </article>
   );
 }

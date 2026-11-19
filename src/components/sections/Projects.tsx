@@ -1,4 +1,4 @@
-import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectsCarousel } from "@/components/projects/ProjectsCarousel";
 import { WhatsAppButton } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -19,14 +19,12 @@ export function Projects() {
           subtitle="Conoce algunos de los proyectos y soluciones digitales en los que he trabajado."
         />
 
-        <div className="mt-14 space-y-6 sm:mt-16 sm:space-y-8">
-          {publishedProjects.map((p, i) => (
-            <ProjectCard key={p.id} project={p} index={i} />
-          ))}
-        </div>
+        <Reveal className="mt-12 sm:mt-14">
+          <ProjectsCarousel projects={publishedProjects} />
+        </Reveal>
 
         {/* CTA después de los proyectos */}
-        <Reveal className="mt-16 flex flex-col items-start justify-between gap-6 rounded-[2rem] bg-neutral-950 p-8 text-white sm:flex-row sm:items-center sm:p-10">
+        <Reveal className="mt-12 flex flex-col items-start justify-between gap-6 rounded-[2rem] bg-neutral-950 p-8 text-white sm:flex-row sm:items-center sm:p-10">
           <div>
             <p className="text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">
               ¿Quieres un proyecto como estos?
