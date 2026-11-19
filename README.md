@@ -48,9 +48,9 @@ Otros comandos: `npm run lint` (revisión del código).
 
 En `src/config/site.ts`:
 
-- `whatsappNumber`: `51912305473` (Perú, +51). Escríbelo solo con dígitos, con el código de país y sin `+`.
+- `whatsappNumber`: `51912305473` (Perú, +51). Se escribe solo con dígitos, con el código de país y sin `+`.
 - `social.instagram` y `social.tiktok`: ya están configurados.
-- `email`: **PENDIENTE**. No se muestra en la web mientras esté vacío.
+- `email`: `edurubio@outlook.es`.
 
 Todos los botones de WhatsApp (encabezado, portada, botón flotante, proyectos, proceso, FAQ, contacto y footer) usan el mismo enlace, generado en `src/lib/whatsapp.ts`.
 

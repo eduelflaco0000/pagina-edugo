@@ -63,8 +63,8 @@ export const siteConfig = {
     whatsappMessage:
       "Hola, vi la página de EDUGO y quisiera información sobre sus servicios. Me gustaría conversar sobre un proyecto para mi negocio.",
 
-    /** PENDIENTE: correo de contacto, p. ej. "contacto@tudominio.com". */
-    email: "",
+    /** Correo de contacto. */
+    email: "edurubio@outlook.es",
   },
 
   /* ---------- Redes sociales (URL completa) ---------- */

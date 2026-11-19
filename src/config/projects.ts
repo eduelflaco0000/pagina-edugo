@@ -132,10 +132,10 @@ export const projects: Project[] = [
     category: "Desarrollo web",
     stage: "Proyecto desarrollado", // PENDIENTE: confirmar etapa real
     client: "Acabados Marbella",
-    // PENDIENTE: cambiar a true solo con autorización del cliente.
-    clientAuthorized: false,
-    description:
-      "Página web para presentar el trabajo y los servicios del negocio. (Descripción editable: reemplazar por el detalle real del proyecto.)",
+    // Autorización confirmada por el cliente.
+    clientAuthorized: true,
+    // PENDIENTE: reemplazar por la descripción real del proyecto.
+    description: "Página web para presentar el trabajo y los servicios del negocio.",
     // PENDIENTE: añadir las funcionalidades reales del sitio.
     features: [],
     images: placeholders("acabados-marbella", "Acabados Marbella"),
