@@ -129,15 +129,14 @@ export const projects: Project[] = [
     order: 4,
     published: true,
     name: "Acabados Marbella",
-    category: "Desarrollo web",
-    stage: "Proyecto desarrollado", // PENDIENTE: confirmar etapa real
+    category: "Sistema empresarial",
+    stage: "Proyecto desarrollado",
     client: "Acabados Marbella",
     // Autorización confirmada por el cliente.
     clientAuthorized: true,
-    // PENDIENTE: reemplazar por la descripción real del proyecto.
-    description: "Página web para presentar el trabajo y los servicios del negocio.",
-    // PENDIENTE: añadir las funcionalidades reales del sitio.
-    features: [],
+    description:
+      "Sistema desarrollado para Acabados Marbella, tienda de cerámica, que permite controlar su inventario y stock de productos y llevar el registro de sus ventas.",
+    features: ["Control de inventario", "Control de stock", "Registro de ventas"],
     images: placeholders("acabados-marbella", "Acabados Marbella"),
   },
 ];
