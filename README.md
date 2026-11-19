@@ -2,6 +2,8 @@
 
 > Tecnología que impulsa negocios.
 
+**📌 ¿Dónde está la web y cómo modificarla? → [GUIA-RAPIDA.md](./GUIA-RAPIDA.md)**
+
 Web oficial de **EDUGO**, la marca de soluciones digitales de Eduardo Rubio.
 Es una landing de una sola página con animación de bienvenida, servicios, portafolio con galerías interactivas, proceso de trabajo, preguntas frecuentes y varios accesos a WhatsApp.
 
